@@ -26,7 +26,7 @@ int main()
         scanf("%d", &code);
         if (code == 1)
         {
-            printf("1---shuruxingming\n");
+            printf("shuruxingming\n");
             scanf("%s", sss[index].name);
             printf("shuruyuwenchengji\n");
             int yuwen;
@@ -45,7 +45,8 @@ int main()
             scanf("%c", &x);
         }
 
-        if (code == 2){
+        if (code == 2)
+        {
             if (index > 0)
             {
                 index--;
@@ -61,24 +62,32 @@ int main()
                 scanf("%c", &x);
                 scanf("%c", &x);
             }
-
         }
         if (code == 3)
         {
-           
-    }
-    if (code == 4)
-    {
-    }
-    if (code == 5)
-    {
-    }
-    if (code == 6)
-    {
-    }
-    if (code == 7)
-    {
+            printf("xianshichengji\n");
+            for (int i = 0; i < index; i++)
+            {
+                printf("%d %s %d %d %d\n", i + 1, sss[i].name, sss[i].yuwen, sss[i].shuxue, sss[i].yingyu);
+            }
+            printf("sss\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
+        }
+
+        if (code == 4)
+        {
+        }
+        if (code == 5)
+        {
+        }
+        if (code == 6)
+        {
+        }
+        if (code == 7)
+        {
+        }
     }
     return 0;
-}
 }
