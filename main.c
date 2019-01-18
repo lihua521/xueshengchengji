@@ -108,20 +108,21 @@ int main()
         }
         if (code == 6)
         {
-             printf("zongfengzuigao\n");
+            printf("zongfengzuigao\n");
 
             int max = 0;
             int stuID = 0;
 
-            for(int i = 0; i < index; i++)
+            for (int i = 0; i < index; i++)
             {
                 int sum = sss[i].yuwen + sss[i].shuxue + sss[i].yingyu;
-                if(max < sum){
-                    max  =  sum;
+                if (max < sum)
+                {
+                    max = sum;
                     stuID = i;
                 }
             }
-            printf("zongfenzuigao%s，yuwen%d，shuxue%d，yingyu%d\n",sss[stuID].name,sss[stuID].yuwen,sss[stuID].shuxue,sss[stuID].yingyu);
+            printf("zongfenzuigao%s，yuwen%d，shuxue%d，yingyu%d\n", sss[stuID].name, sss[stuID].yuwen, sss[stuID].shuxue, sss[stuID].yingyu);
 
             printf("dianjihuichejixu\n");
             char x;
@@ -130,6 +131,27 @@ int main()
         }
         if (code == 7)
         {
+            double max = 0.0;
+            int stuID = 0;
+            for (int i = 0; i < index; i++)
+            {
+                if (sss[i].yuwen >= 60 && sss[i].shuxue >= 60 && sss[i].yingyu >= 60)
+                {
+                    double avg = (sss[i].yuwen + sss[i].shuxue + sss[i].yingyu) / 3.0;
+                    if (max < avg)
+                    {
+                        max = avg;
+                        stuID = i;
+                    }
+                }
+            }
+
+            printf("pingjunfenzuigaoqiemeiyoubijigede%s，yuwen：%d，shuxue%d，yingyu%d\n", sss[stuID].name, sss[stuID].yuwen, sss[stuID].shuxue, sss[stuID].yingyu);
+
+            printf("dianjihuichejixu\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
     }
     return 0;
