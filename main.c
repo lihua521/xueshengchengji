@@ -93,6 +93,16 @@ int main()
         }
         if (code == 5)
         {
+            for (int i = 0; i < index; i++)
+            {
+                if ((sss[i].yuwen && sss[i].shuxue && sss[i].yingyu) < 60)
+                {
+                    printf("dianjihuichujixu:\n");
+                }
+            }
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 6)
         {
