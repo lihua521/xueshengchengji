@@ -96,17 +96,18 @@ int main()
         {
             for (int i = 0; i < index; i++)
             {
-                if ((sss[i].yuwen && sss[i].shuxue && sss[i].yingyu) < 60)
+                if (sss[i].yuwen < 60 && sss[i].shuxue < 60 && sss[i].yingyu < 60)
                 {
-                    printf("dianjihuichujixu:\n");
+                    printf("%d %s\n", i + 1, sss[i].name);
                 }
             }
+            printf("dianjihuchejixu\n");
             char x;
             scanf("%c", &x);
             scanf("%c", &x);
         }
-        if (code == 6){
-
+        if (code == 6)
+        {
         }
         if (code == 7)
         {
