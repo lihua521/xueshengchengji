@@ -10,6 +10,7 @@ int main()
 {
     struct Student sss[1000];
     int index = 0;
+    int sum = 0;
     printf("xueshengchengjixitong\n");
     while (1)
     {
@@ -104,8 +105,8 @@ int main()
             scanf("%c", &x);
             scanf("%c", &x);
         }
-        if (code == 6)
-        {
+        if (code == 6){
+
         }
         if (code == 7)
         {
