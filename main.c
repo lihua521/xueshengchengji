@@ -108,6 +108,25 @@ int main()
         }
         if (code == 6)
         {
+             printf("zongfengzuigao\n");
+
+            int max = 0;
+            int stuID = 0;
+
+            for(int i = 0; i < index; i++)
+            {
+                int sum = sss[i].yuwen + sss[i].shuxue + sss[i].yingyu;
+                if(max < sum){
+                    max  =  sum;
+                    stuID = i;
+                }
+            }
+            printf("zongfenzuigao%s，yuwen%d，shuxue%d，yingyu%d\n",sss[stuID].name,sss[stuID].yuwen,sss[stuID].shuxue,sss[stuID].yingyu);
+
+            printf("dianjihuichejixu\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 7)
         {
