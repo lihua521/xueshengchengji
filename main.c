@@ -78,6 +78,18 @@ int main()
 
         if (code == 4)
         {
+            for (int i = 0; i < index; i++)
+            {
+                sum = sss[i].yuwen + sss[i].shuxue + sss[i].yingyu;
+                if (sum < 180)
+                {
+                    printf("%d %s\n", i + 1, sss[i].name);
+                }
+            }
+            printf("dianjihuichejixu:\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 5)
         {
