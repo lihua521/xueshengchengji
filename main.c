@@ -1,8 +1,13 @@
 #include <stdio.h>
-
+struct Student{
+    int yuwen;
+    int shuxue;
+    int yingyu;
+    char name[100];
+};
 int main()
 {
-    struct Student www[1000];
+    struct Student sss[1000];
     int index = 0;
     printf("xueshengchengjixitong\n");
     while (1)
@@ -15,11 +20,31 @@ int main()
         printf("6---yewu3\n");
         printf("7---yewu4\n");
         printf("shurugongneng\n");
-
+        
         int code;
+        scanf("%d",&code);
         if (code == 1)
         {
+            printf("1---shuruxingming\n");
+            scanf("%s", sss[index].name);
+            printf("shuruyuwenchengji\n");
+            int yuwen;
+            scanf("%d", &yuwen);
+            scanf("%d", &yuwen);
+            sss[index].yuwen = yuwen;
+            int shuxue;
+            scanf("%d", &shuxue);
+            sss[index].shuxue = shuxue;
+            int yingyu;
+            scanf("%d", &yingyu);
+            sss[index].yingyu = yingyu;
+            index++;
+            printf("dianjihuichejixu\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
+
         if (code == 2)
         {
         }
@@ -40,3 +65,4 @@ int main()
         }
         return 0;
     }
+}
